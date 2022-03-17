@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "dist/shoppiee",
+    "site": "shoppiee",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

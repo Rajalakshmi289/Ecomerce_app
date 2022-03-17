@@ -1,0 +1,24 @@
+
+<div class="row">
+    <div id="slider">
+        <figure>
+              
+              <img src="https://i.pinimg.com/originals/07/f7/0d/07f70d59bbd3696e465a820024c05e52.png">
+              <img src="https://www.appliancewarehouse.com/wp-content/uploads/2017/04/home-appliances-banner-1080x505.jpg">
+              <img src="https://www.grundig.com/ktchnmag/wp-content/uploads/2018/07/GRUNDIG_KTCHN_kitchen-appliance-trends-2018_GRUNDIG.jpg">
+        </figure>
+    </div>
+    <div class="col-3"> 
+        <product-filter [category]="category"></product-filter> 
+    </div> 
+    <div class="col"> 
+        <div class="row" *ngIf="cart$ | async as cart"> 
+            <ng-container *ngFor="let p of filteredProducts; let i = index"> 
+              <div class="col"> 
+                <product-card [product]="p" [shopping-cart]="cart" ></product-card> 
+               </div>    
+               <div *ngIf="(i + 1) % 2 === 0" class="w-100"></div> 
+            </ng-container> 
+        </div> 
+    </div> 
+</div>

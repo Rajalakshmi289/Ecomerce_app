@@ -1,0 +1,8 @@
+.dropdown-toggle{
+    cursor: pointer;
+}
+
+.badge {
+    background-color:skyblue;
+    color:black;
+}

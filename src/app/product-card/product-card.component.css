@@ -1,0 +1,26 @@
+.card-footer{
+    padding: 0;
+}
+
+.card{
+    margin-bottom: 30px;
+    height: 28vw;
+    width:80%;
+    object-fit:cover;
+}
+
+
+.cardu{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    width: 250px;
+    margin-top: 25px;
+}
+
+
+
+.card-footer button{
+ cursor:pointer;
+}
